@@ -40,7 +40,7 @@ fs.readdir("./commands/", (err, files) =>{
     setInterval(() => {
         let Status = [
             `with ${servercount} users | n!help`,
-            'with SamBro2901 | n!help',
+            'with Wumpus | n!help',
         ];
       
         bot.user.setActivity(Status[Math.floor(Math.random() * Status.length)], { "type": "PLAYING" });
