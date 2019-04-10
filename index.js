@@ -87,7 +87,7 @@ fs.readdir("./commands/", (err, files) =>{
                   level.xp = totExp - (level.level*200);
                   level.totxp = level.totxp + coinstoAdd;
                   level.level = level.level + 1;
-                    bot.channels.get('560520989016981504').send(`<a:levelup:565440320750485504> **GG <@${message.author.id}>!** <a:levelup:565440320750485504>, You have just leveled up! You are now level ${level.level}.`);
+                    bot.channels.get('560520989016981504').send(`<a:levelup:565440320750485504> **GG <@${message.author.id}>!** <a:levelup:565440320750485504>, You have just leveled up! You are now level **${level.level}**`);
                 }else{
                   level.xp = level.xp + coinstoAdd;
                   level.totxp = level.totxp + coinstoAdd;
