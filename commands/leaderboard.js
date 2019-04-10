@@ -1,6 +1,6 @@
 const Discord = require('discord.js'); 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://admin:CRQ8wzventP78fIM@mirage-shard-00-00-2rl8l.mongodb.net:27017,mirage-shard-00-01-2rl8l.mongodb.net:27017,mirage-shard-00-02-2rl8l.mongodb.net:27017/test?ssl=true&replicaSet=Mirage-shard-0&authSource=admin&retryWrites=true', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true
 });
 const Level = require("../models/level.js");
