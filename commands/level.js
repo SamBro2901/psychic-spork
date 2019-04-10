@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:EkqTOSDYCVblwq2t@netamodmail-ehxnj.mongodb.net/test?retryWrites=true', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true
 });
 const Level = require('../models/level.js');
