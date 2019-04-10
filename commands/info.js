@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args, command) =>{
+    
+    if(message.channel.id != '565128061599744000') return;
 
     if(!message.channel.permissionsFor(bot.user).has("SEND_MESSAGES")) return;
 
