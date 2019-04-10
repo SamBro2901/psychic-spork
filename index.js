@@ -130,6 +130,7 @@ fs.readdir("./commands/", (err, files) =>{
 
     let welEmbed = new Discord.RichEmbed()
     .setAuthor(member.user.tag, userURL)
+    .setColor('BLURPLE')
     .setThumbnail(userURL)
     .setDescription(`<:wumpuswelcome:564434594250752031> Welcome to **${member.guild.name}**! <a:wumpusdance:564435111676870657>`)
     .setTimestamp();
