@@ -4,6 +4,7 @@ const botconfig = require("../botconfig.json");
 
 module.exports.run = async (bot, message, args, command) =>{
 
+    if(message.channel.id != '564458830272921621') return;
     if(!message.channel.permissionsFor(bot.user).has("SEND_MESSAGES")) return;
 if(!message.member.hasPermission('MANAGE_GUILD')) return message.reply(`Oops, it seems like you don't have the \`MANAGE SERVER\` permission.`);
 
@@ -31,7 +32,7 @@ let iURL = message.author.avatarURL;
     message.reply('Thanks for your feedback! Your suggestion will appear in #suggestions')
 
     try{
-        bot.channels.get('564669973281112076').send(suggestEmbed).then(async function (message){
+        bot.channels.get('564458699784192010').send(suggestEmbed).then(async function (message){
             await message.react('👍')
             await message.react('👎')
         });
