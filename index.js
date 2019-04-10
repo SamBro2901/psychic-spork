@@ -7,7 +7,7 @@ const talkedRecently = new Set();
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:EkqTOSDYCVblwq2t@netamodmail-ehxnj.mongodb.net/test?retryWrites=true', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true
 });
 const Level = require('./models/level.js');
