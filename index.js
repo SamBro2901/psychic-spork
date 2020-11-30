@@ -96,7 +96,7 @@ fs.readdir("./commands/", (err, files) =>{
                 let role1 = '560871018089152512';
                 let role2 = '553198335280939008';
                 let role3 = '553198504512716800';
-                let role4 = '564480448236093440';
+                let role4 = '564480448236093440';  
 
                 if(level.level ===5){
                     message.member.addRole(role1);
